@@ -3,7 +3,7 @@ title: "README"
 output: html_document
 ---
 # Homework 2
-## Author: Molly Zych
+##  Molly Zych
 
 The second homework assignment for MCB 517A: Tools for Computational Biology.
 
