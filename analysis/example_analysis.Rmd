@@ -1,0 +1,57 @@
+---
+title: "Homework 2"
+output: html_document
+---
+```{r}
+library(tidyverse)
+```
+
+```{r}
+data <- read_tsv("../data/tables/example_dataset_2.tsv") %>%
+  print()
+```
+
+```{r}
+data <- data %>%
+mutate(mean_ratio = mean_yfp / mean_rfp) %>%
+print()
+```
+
+```{r}
+data %>%
+mutate(mean_ratio = round(mean_ratio, 2)) %>%
+print()
+```
+
+```{r}
+annotations <- read_tsv("../data/tables/example_dataset_3.tsv") %>%
+print()
+```
+
+```{r}
+data %>%
+right_join(annotations, by = "strain") %>%
+print()
+```
+
+```{r}
+data %>%
+summarize(max_yfp = max(mean_yfp),
+max_rfp = max(mean_rfp)) %>%
+print()
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+
